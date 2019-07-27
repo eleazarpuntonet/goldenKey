@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ProveedoresService } from './proveedores.service';
+
 
 @Component({
   selector: 'app-root',
@@ -7,8 +9,25 @@ import { Component } from '@angular/core';
 
 })
 export class AppComponent implements OnInit {
-  title = 'proyectoGoldenKey';
+	proveedores = {}
+  title = 'proyectoGoldenKey'
+  options: menuItem[] = [
+    {value: 'proveedores', texto: 'Proveedores'},
+    {value: 'productos', texto: 'Productos'},
+    {value: 'tiendas', texto: 'Tiendas'},
+    {value: 'inventario', texto: 'Inventario'},
+  ];
+
+	constructor(private proveedoresService : ProveedoresService){
+  	this.proveedores = proveedoresService.getProveedores()
+	}
+
   ngOnInit() {
     console.log("Tengo vida!")
   }
+}
+
+export interface menuItem {
+  value: string;
+  texto: string;
 }

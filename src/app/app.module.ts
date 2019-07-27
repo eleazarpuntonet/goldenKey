@@ -2,16 +2,30 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { StorehandlerComponent } from './storehandler/storehandler.component';
+import { ProveedoresComponent,dialogoEditaProveedor } from './proveedores/proveedores.component';
+import { MatTableModule } from '@angular/material'  
+import { MatPaginatorModule } from '@angular/material';
+import {MatButtonModule} from '@angular/material/button';
+import {MatSelectModule} from '@angular/material/select';
+import {MatDialogModule} from '@angular/material/dialog';
 
+import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
-    StorehandlerComponent
+    ProveedoresComponent,
+    dialogoEditaProveedor
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MatTableModule,
+    MatPaginatorModule,
+    NoopAnimationsModule,
+    MatButtonModule,
+    MatSelectModule,
+    MatDialogModule
   ],
+  entryComponents: [dialogoEditaProveedor],
   providers: [],
   bootstrap: [AppComponent]
 })
