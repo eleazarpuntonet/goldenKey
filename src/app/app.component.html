@@ -5,8 +5,8 @@
     <mat-label>Seleccione una vista</mat-label>
     <mat-select>
       <mat-option 
-      	*ngFor="let menuItem of options" 
-      	[value]="menuItem.value">
+      	*ngFor  = "let menuItem of options"
+      	[value] = "menuItem.value">
         {{menuItem.texto}}
       </mat-option>
     </mat-select>

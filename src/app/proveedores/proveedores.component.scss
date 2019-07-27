@@ -4,3 +4,12 @@ table {
 .mat-header-cell {
     text-align: center !important;
 }
+.buttonLine{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+.ele-boton{
+	margin: 5px 5px !important;
+}

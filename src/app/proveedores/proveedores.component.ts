@@ -2,6 +2,7 @@ import {Component, OnInit, ViewChild, Inject} from '@angular/core';
 import {MatPaginator} from '@angular/material/paginator';
 import {MatTableDataSource} from '@angular/material/table';
 import { ProveedoresService } from '../proveedores.service';
+import {SelectionModel} from '@angular/cdk/collections';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 @Component({
   selector: 'dtable-proveedores',
@@ -11,39 +12,89 @@ import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog
 
 
 export class ProveedoresComponent implements OnInit {
-	displayedColumns: string[] = ['id', 'proveedor', 'pais', 'telefono','action'];
-	dataSource : any = []
-
+	displayedColumns: string[] = ['select','id', 'proveedor', 'pais', 'telefono','action'];
+	dataSource : any           = []
+	selection = new SelectionModel<ProveedoresElements>(true, []);
 	constructor(
 		private proveedoresService : ProveedoresService,
-		public dialog: MatDialog
-		){
+		public dialog: MatDialog){
 		this.dataSource = new MatTableDataSource<ProveedoresElements>(proveedoresService.getProveedores());
 	}
 
-	@ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
+	@ViewChild(MatPaginator, {static: true}) paginator: MatPaginator
 
 	ngOnInit() {
-	  this.dataSource.paginator = this.paginator;
+	  this.dataSource.paginator = this.paginator
 	}
 
-	edtProveedor(row){
+	openDialog(row){
 		console.log(row)
-
 		const dialogRef = this.dialog.open(dialogoEditaProveedor, {
-		  width: '250px',
-		  data: {valor: 'row'}
-		});
+		  width: '350px',
+		  data: {
+		  	id        : row.id,
+		  	proveedor : row.proveedor,
+		  	pais      : row.pais,
+		  	telefono  : row.telefono,
+		  }
+		})
 
 		dialogRef.afterClosed().subscribe(result => {
-		  console.log('The dialog was closed');
-		  console.log(result)
-		});
+			console.log(result)
+			this.selection.clear()
+			this.reloadData()
+		})
 	}
 
 	delProveedor(row){
 		this.proveedoresService.delProveedor(row.id)
-		
+		this.reloadData()
+	}
+
+	reloadData(){
+		this.dataSource = new MatTableDataSource<ProveedoresElements>(this.proveedoresService.getProveedores());
+		this.dataSource.paginator = this.paginator
+	}
+
+	isAllSelected() {
+	  const numSelected = this.selection.selected.length;
+	  const numRows = this.dataSource.data.length;
+	  return numSelected === numRows;
+	}
+
+	/** Selects all rows if they are not all selected; otherwise clear selection. */
+	masterToggle() {
+	  this.isAllSelected() ?
+	      this.selection.clear() :
+	      this.dataSource.data.forEach(row => this.selection.select(row));
+	}
+
+	/** The label for the checkbox on the passed row */
+	checkboxLabel(row?: ProveedoresElements): string {
+	  if (!row) {
+	    return `${this.isAllSelected() ? 'select' : 'deselect'} all`;
+	  }
+	  return `${this.selection.isSelected(row) ? 'deselect' : 'select'} row ${row.id + 1}`;
+	}
+
+	massDelProveedor(selecciones){
+		console.log(selecciones)
+		console.log(selecciones.selected[0])
+		console.log(selecciones._selection.entries)
+	}
+
+	edtProveedor(row){
+			const dialogRef = this.dialog.open(dialogoEditaProveedor, {
+			  width: '350px',
+			  data: {
+			  	id        : row.id,
+			  	proveedor : row.proveedor,
+			  	pais      : row.pais,
+			  	telefono  : row.telefono,
+			  }
+			})
+		  //this.proveedoresService.edtProveedores(row)
+			//this.reloadData()
 	}
 }
 
@@ -63,20 +114,31 @@ export interface ProveedoresElements {
 
 
 export interface DialogData {
-  valor: string;
+  proveedor: Object
 }
 @Component({
-  selector: 'ddialogo-editar-proveedor',
+  selector: 'dialogo-editar-proveedor',
   templateUrl: 'dialogoEditarProveedor.html',
+  styleUrls: ['./dialogoEditarProveedor.scss']
+
 })
 export class dialogoEditaProveedor {
 
   constructor(
+  	private proveedoresService : ProveedoresService,
     public dialogRef: MatDialogRef<dialogoEditaProveedor>,
     @Inject(MAT_DIALOG_DATA) public data: DialogData) {}
 
   onNoClick(): void {
-    this.dialogRef.close();
+    this.dialogRef.close()
   }
+
+  edtProveedor(row){
+  	console.log(this.dialogRef)
+ 	  this.proveedoresService.edtProveedores(row)
+    this.dialogRef.close()
+
+  }
+
 
 }

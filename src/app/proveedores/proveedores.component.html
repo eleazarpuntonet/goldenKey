@@ -1,5 +1,43 @@
 <div class="mat-elevation-z8">
+  <div class="buttonLine">
+    <button 
+      class="ele-boton ele-edt"
+      mat-raised-button 
+      color="primary">Crear
+    </button>
+    <button 
+      [disabled]="selection.selected.length>1? true : false"
+      class="ele-boton ele-edt"
+      (click)="openDialog(selection.selected[0])" 
+      mat-raised-button 
+      color="primary">Editar
+    </button>
+    <button 
+      class="ele-boton ele-del"
+      mat-raised-button 
+      (click)="massDelProveedor(selection.selected)" 
+      color="warn">Eliminar
+    </button>
+  </div>
+
+  
   <table mat-table [dataSource]="dataSource">
+    <ng-container matColumnDef="select">
+      <th mat-header-cell *matHeaderCellDef>
+        <mat-checkbox (change)="$event ? masterToggle() : null"
+                      [checked]="selection.hasValue() && isAllSelected()"
+                      [indeterminate]="selection.hasValue() && !isAllSelected()"
+                      [aria-label]="checkboxLabel()">
+        </mat-checkbox>
+      </th>
+      <td mat-cell *matCellDef="let row">
+        <mat-checkbox (click)="$event.stopPropagation()"
+                      (change)="$event ? selection.toggle(row) : null"
+                      [checked]="selection.isSelected(row)"
+                      [aria-label]="checkboxLabel(row)">
+        </mat-checkbox>
+      </td>
+    </ng-container>
 
     <!-- Position Column -->
     <ng-container 
@@ -59,13 +97,13 @@
       </th>
       <td mat-cell *matCellDef="let row">
         <button 
-          class="ele-boton ele-edt"
+          class="ele"
           mat-raised-button 
-          (click)="edtProveedor(row)" 
+          (click)="openDialog(row)" 
           color="primary">Editar
         </button>
         <button 
-          class="ele-boton ele-del"
+          class="ele"
           mat-raised-button 
           (click)="delProveedor(row)" 
           color="warn">Eliminar

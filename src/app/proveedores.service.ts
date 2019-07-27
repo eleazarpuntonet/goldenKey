@@ -6,7 +6,7 @@ localStorage.setItem('proveedores', JSON.stringify(proveedoresFile))
 })
 export class ProveedoresService {
 	proveedores : any = [] 
-  
+
   constructor() {
     this.proveedores = JSON.parse(localStorage.getItem('proveedores'))
   }
@@ -17,19 +17,18 @@ export class ProveedoresService {
   }
 
   getProveedores(){
-  	return this.proveedores
+  	return JSON.parse(localStorage.getItem('proveedores'))
   }
 
-  edtProveedores(id,newProveedor){
+  edtProveedores(newProveedor){
   	let indx = this.proveedores.findIndex((item,index)=>{
-  		return item.id === id
+  		return item.id === newProveedor.id
   	})
   	this.proveedores.splice(indx,1,newProveedor)
   	this.saveProveedores()
   }
 
   delProveedor(id){
-    console.log("Proveedor: "+id+" eliminado")
   	let indx = this.proveedores.findIndex((item,index)=>{
   		return item.id === id
   	})

@@ -1,4 +1,27 @@
-<h2>
-	Editaremos en este espacio
-	{{valor}}
-</h2>
+<h1 mat-dialog-title>Editar Proveedor</h1>
+<div mat-dialog-content class="ele-dialog">
+  <mat-form-field>
+    <input matInput 
+    	placeholder="Id" 
+    	disabled [(ngModel)]="data.id">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput 
+    	placeholder="Proveedor" 
+    	[(ngModel)]="data.proveedor">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput 
+    	placeholder="Pais" 
+    	[(ngModel)]="data.pais">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput 
+    	placeholder="Telefono" 
+    	[(ngModel)]="data.telefono">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancelar</button>
+  <button mat-button (click)="edtProveedor(data)" [mat-dialog-close]="data" cdkFocusInitial>Guardar</button>
+</div>

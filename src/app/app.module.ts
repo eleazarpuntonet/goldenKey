@@ -8,7 +8,8 @@ import { MatPaginatorModule } from '@angular/material';
 import {MatButtonModule} from '@angular/material/button';
 import {MatSelectModule} from '@angular/material/select';
 import {MatDialogModule} from '@angular/material/dialog';
-
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule, MatInputModule ,MatCheckboxModule} from '@angular/material';
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
@@ -23,7 +24,11 @@ import {NoopAnimationsModule} from '@angular/platform-browser/animations';
     NoopAnimationsModule,
     MatButtonModule,
     MatSelectModule,
-    MatDialogModule
+    MatDialogModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatCheckboxModule
   ],
   entryComponents: [dialogoEditaProveedor],
   providers: [],
