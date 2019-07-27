@@ -36,6 +36,13 @@
     	placeholder="Cantidad" 
     	[(ngModel)]="data.cantidad">
   </mat-form-field>
+  <mat-form-field>
+    <input 
+      matInput 
+      required
+      placeholder="Fecha de compra" 
+      [(ngModel)]="data.fecha_compra">
+  </mat-form-field>
 </div>
 <div mat-dialog-actions>
   <button mat-button (click)="onNoClick()">Cancelar</button>

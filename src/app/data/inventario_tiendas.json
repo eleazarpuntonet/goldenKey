@@ -1,501 +1,601 @@
 [{
   "id": 1,
-  "id_producto": 75,
-  "id_tienda": 7,
-  "cantidad": 87
+  "id_producto": 35,
+  "id_tienda": 6,
+  "cantidad": 60,
+  "fecha_compra": "5/9/2019"
 }, {
   "id": 2,
-  "id_producto": 85,
-  "id_tienda": 6,
-  "cantidad": 61
+  "id_producto": 59,
+  "id_tienda": 10,
+  "cantidad": 48,
+  "fecha_compra": "2/22/2019"
 }, {
   "id": 3,
-  "id_producto": 9,
-  "id_tienda": 3,
-  "cantidad": 75
+  "id_producto": 88,
+  "id_tienda": 7,
+  "cantidad": 42,
+  "fecha_compra": "1/15/2019"
 }, {
   "id": 4,
   "id_producto": 58,
   "id_tienda": 2,
-  "cantidad": 90
+  "cantidad": 49,
+  "fecha_compra": "6/10/2019"
 }, {
   "id": 5,
-  "id_producto": 85,
-  "id_tienda": 6,
-  "cantidad": 41
+  "id_producto": 83,
+  "id_tienda": 7,
+  "cantidad": 84,
+  "fecha_compra": "5/16/2019"
 }, {
   "id": 6,
-  "id_producto": 2,
-  "id_tienda": 10,
-  "cantidad": 8
-}, {
-  "id": 7,
-  "id_producto": 51,
-  "id_tienda": 5,
-  "cantidad": 35
-}, {
-  "id": 8,
-  "id_producto": 72,
-  "id_tienda": 2,
-  "cantidad": 86
-}, {
-  "id": 9,
-  "id_producto": 67,
-  "id_tienda": 4,
-  "cantidad": 83
-}, {
-  "id": 10,
-  "id_producto": 57,
-  "id_tienda": 1,
-  "cantidad": 87
-}, {
-  "id": 11,
-  "id_producto": 88,
-  "id_tienda": 6,
-  "cantidad": 22
-}, {
-  "id": 12,
-  "id_producto": 17,
-  "id_tienda": 9,
-  "cantidad": 67
-}, {
-  "id": 13,
-  "id_producto": 10,
-  "id_tienda": 1,
-  "cantidad": 83
-}, {
-  "id": 14,
-  "id_producto": 81,
-  "id_tienda": 3,
-  "cantidad": 73
-}, {
-  "id": 15,
-  "id_producto": 84,
-  "id_tienda": 8,
-  "cantidad": 48
-}, {
-  "id": 16,
-  "id_producto": 74,
-  "id_tienda": 10,
-  "cantidad": 76
-}, {
-  "id": 17,
-  "id_producto": 13,
-  "id_tienda": 6,
-  "cantidad": 87
-}, {
-  "id": 18,
-  "id_producto": 13,
-  "id_tienda": 5,
-  "cantidad": 30
-}, {
-  "id": 19,
-  "id_producto": 52,
-  "id_tienda": 9,
-  "cantidad": 43
-}, {
-  "id": 20,
-  "id_producto": 85,
-  "id_tienda": 7,
-  "cantidad": 48
-}, {
-  "id": 21,
-  "id_producto": 68,
-  "id_tienda": 6,
-  "cantidad": 20
-}, {
-  "id": 22,
-  "id_producto": 39,
-  "id_tienda": 4,
-  "cantidad": 72
-}, {
-  "id": 23,
-  "id_producto": 49,
-  "id_tienda": 9,
-  "cantidad": 25
-}, {
-  "id": 24,
-  "id_producto": 57,
-  "id_tienda": 7,
-  "cantidad": 63
-}, {
-  "id": 25,
-  "id_producto": 67,
-  "id_tienda": 9,
-  "cantidad": 19
-}, {
-  "id": 26,
-  "id_producto": 5,
-  "id_tienda": 9,
-  "cantidad": 98
-}, {
-  "id": 27,
-  "id_producto": 60,
-  "id_tienda": 4,
-  "cantidad": 86
-}, {
-  "id": 28,
-  "id_producto": 64,
-  "id_tienda": 3,
-  "cantidad": 13
-}, {
-  "id": 29,
-  "id_producto": 33,
-  "id_tienda": 4,
-  "cantidad": 71
-}, {
-  "id": 30,
-  "id_producto": 28,
-  "id_tienda": 1,
-  "cantidad": 93
-}, {
-  "id": 31,
-  "id_producto": 28,
-  "id_tienda": 6,
-  "cantidad": 26
-}, {
-  "id": 32,
-  "id_producto": 81,
-  "id_tienda": 6,
-  "cantidad": 12
-}, {
-  "id": 33,
-  "id_producto": 96,
-  "id_tienda": 10,
-  "cantidad": 79
-}, {
-  "id": 34,
-  "id_producto": 49,
-  "id_tienda": 6,
-  "cantidad": 26
-}, {
-  "id": 35,
-  "id_producto": 12,
-  "id_tienda": 1,
-  "cantidad": 69
-}, {
-  "id": 36,
-  "id_producto": 28,
-  "id_tienda": 2,
-  "cantidad": 45
-}, {
-  "id": 37,
-  "id_producto": 40,
-  "id_tienda": 9,
-  "cantidad": 20
-}, {
-  "id": 38,
-  "id_producto": 5,
-  "id_tienda": 9,
-  "cantidad": 35
-}, {
-  "id": 39,
-  "id_producto": 35,
-  "id_tienda": 6,
-  "cantidad": 30
-}, {
-  "id": 40,
-  "id_producto": 70,
-  "id_tienda": 4,
-  "cantidad": 91
-}, {
-  "id": 41,
-  "id_producto": 81,
-  "id_tienda": 6,
-  "cantidad": 72
-}, {
-  "id": 42,
-  "id_producto": 69,
-  "id_tienda": 10,
-  "cantidad": 47
-}, {
-  "id": 43,
-  "id_producto": 56,
-  "id_tienda": 8,
-  "cantidad": 87
-}, {
-  "id": 44,
-  "id_producto": 41,
-  "id_tienda": 8,
-  "cantidad": 28
-}, {
-  "id": 45,
-  "id_producto": 11,
-  "id_tienda": 5,
-  "cantidad": 68
-}, {
-  "id": 46,
-  "id_producto": 28,
-  "id_tienda": 2,
-  "cantidad": 86
-}, {
-  "id": 47,
-  "id_producto": 85,
-  "id_tienda": 5,
-  "cantidad": 83
-}, {
-  "id": 48,
-  "id_producto": 55,
-  "id_tienda": 7,
-  "cantidad": 57
-}, {
-  "id": 49,
-  "id_producto": 25,
-  "id_tienda": 9,
-  "cantidad": 12
-}, {
-  "id": 50,
   "id_producto": 65,
   "id_tienda": 7,
-  "cantidad": 54
+  "cantidad": 2,
+  "fecha_compra": "9/25/2018"
 }, {
-  "id": 51,
-  "id_producto": 44,
+  "id": 7,
+  "id_producto": 95,
   "id_tienda": 2,
-  "cantidad": 76
+  "cantidad": 51,
+  "fecha_compra": "8/28/2018"
 }, {
-  "id": 52,
-  "id_producto": 100,
-  "id_tienda": 2,
-  "cantidad": 74
-}, {
-  "id": 53,
-  "id_producto": 60,
-  "id_tienda": 9,
-  "cantidad": 51
-}, {
-  "id": 54,
-  "id_producto": 87,
+  "id": 8,
+  "id_producto": 11,
   "id_tienda": 1,
-  "cantidad": 59
+  "cantidad": 53,
+  "fecha_compra": "9/15/2018"
 }, {
-  "id": 55,
-  "id_producto": 97,
-  "id_tienda": 4,
-  "cantidad": 61
+  "id": 9,
+  "id_producto": 10,
+  "id_tienda": 8,
+  "cantidad": 40,
+  "fecha_compra": "12/20/2018"
 }, {
-  "id": 56,
-  "id_producto": 40,
-  "id_tienda": 1,
-  "cantidad": 83
-}, {
-  "id": 57,
-  "id_producto": 28,
-  "id_tienda": 7,
-  "cantidad": 100
-}, {
-  "id": 58,
-  "id_producto": 86,
-  "id_tienda": 2,
-  "cantidad": 52
-}, {
-  "id": 59,
-  "id_producto": 55,
-  "id_tienda": 3,
-  "cantidad": 98
-}, {
-  "id": 60,
-  "id_producto": 42,
-  "id_tienda": 7,
-  "cantidad": 41
-}, {
-  "id": 61,
-  "id_producto": 83,
-  "id_tienda": 4,
-  "cantidad": 69
-}, {
-  "id": 62,
-  "id_producto": 13,
-  "id_tienda": 4,
-  "cantidad": 82
-}, {
-  "id": 63,
-  "id_producto": 24,
-  "id_tienda": 2,
-  "cantidad": 32
-}, {
-  "id": 64,
-  "id_producto": 44,
-  "id_tienda": 4,
-  "cantidad": 38
-}, {
-  "id": 65,
-  "id_producto": 14,
+  "id": 10,
+  "id_producto": 95,
   "id_tienda": 6,
-  "cantidad": 78
+  "cantidad": 33,
+  "fecha_compra": "7/24/2019"
 }, {
-  "id": 66,
-  "id_producto": 66,
-  "id_tienda": 7,
-  "cantidad": 63
+  "id": 11,
+  "id_producto": 6,
+  "id_tienda": 4,
+  "cantidad": 74,
+  "fecha_compra": "9/13/2018"
 }, {
-  "id": 67,
+  "id": 12,
   "id_producto": 79,
   "id_tienda": 7,
-  "cantidad": 47
+  "cantidad": 31,
+  "fecha_compra": "11/21/2018"
+}, {
+  "id": 13,
+  "id_producto": 38,
+  "id_tienda": 10,
+  "cantidad": 44,
+  "fecha_compra": "12/27/2018"
+}, {
+  "id": 14,
+  "id_producto": 98,
+  "id_tienda": 7,
+  "cantidad": 50,
+  "fecha_compra": "2/19/2019"
+}, {
+  "id": 15,
+  "id_producto": 94,
+  "id_tienda": 4,
+  "cantidad": 77,
+  "fecha_compra": "11/4/2018"
+}, {
+  "id": 16,
+  "id_producto": 95,
+  "id_tienda": 9,
+  "cantidad": 43,
+  "fecha_compra": "5/21/2019"
+}, {
+  "id": 17,
+  "id_producto": 4,
+  "id_tienda": 10,
+  "cantidad": 59,
+  "fecha_compra": "3/20/2019"
+}, {
+  "id": 18,
+  "id_producto": 12,
+  "id_tienda": 3,
+  "cantidad": 4,
+  "fecha_compra": "3/12/2019"
+}, {
+  "id": 19,
+  "id_producto": 32,
+  "id_tienda": 7,
+  "cantidad": 27,
+  "fecha_compra": "12/8/2018"
+}, {
+  "id": 20,
+  "id_producto": 5,
+  "id_tienda": 9,
+  "cantidad": 61,
+  "fecha_compra": "5/2/2019"
+}, {
+  "id": 21,
+  "id_producto": 26,
+  "id_tienda": 7,
+  "cantidad": 23,
+  "fecha_compra": "1/11/2019"
+}, {
+  "id": 22,
+  "id_producto": 92,
+  "id_tienda": 6,
+  "cantidad": 60,
+  "fecha_compra": "1/23/2019"
+}, {
+  "id": 23,
+  "id_producto": 9,
+  "id_tienda": 4,
+  "cantidad": 42,
+  "fecha_compra": "5/31/2019"
+}, {
+  "id": 24,
+  "id_producto": 10,
+  "id_tienda": 2,
+  "cantidad": 98,
+  "fecha_compra": "11/20/2018"
+}, {
+  "id": 25,
+  "id_producto": 44,
+  "id_tienda": 8,
+  "cantidad": 4,
+  "fecha_compra": "10/24/2018"
+}, {
+  "id": 26,
+  "id_producto": 33,
+  "id_tienda": 10,
+  "cantidad": 98,
+  "fecha_compra": "7/3/2019"
+}, {
+  "id": 27,
+  "id_producto": 91,
+  "id_tienda": 6,
+  "cantidad": 6,
+  "fecha_compra": "1/5/2019"
+}, {
+  "id": 28,
+  "id_producto": 93,
+  "id_tienda": 7,
+  "cantidad": 7,
+  "fecha_compra": "9/22/2018"
+}, {
+  "id": 29,
+  "id_producto": 53,
+  "id_tienda": 10,
+  "cantidad": 3,
+  "fecha_compra": "7/15/2019"
+}, {
+  "id": 30,
+  "id_producto": 45,
+  "id_tienda": 10,
+  "cantidad": 11,
+  "fecha_compra": "2/17/2019"
+}, {
+  "id": 31,
+  "id_producto": 17,
+  "id_tienda": 8,
+  "cantidad": 52,
+  "fecha_compra": "12/14/2018"
+}, {
+  "id": 32,
+  "id_producto": 94,
+  "id_tienda": 5,
+  "cantidad": 98,
+  "fecha_compra": "12/8/2018"
+}, {
+  "id": 33,
+  "id_producto": 52,
+  "id_tienda": 4,
+  "cantidad": 98,
+  "fecha_compra": "7/10/2019"
+}, {
+  "id": 34,
+  "id_producto": 79,
+  "id_tienda": 3,
+  "cantidad": 38,
+  "fecha_compra": "11/4/2018"
+}, {
+  "id": 35,
+  "id_producto": 79,
+  "id_tienda": 8,
+  "cantidad": 79,
+  "fecha_compra": "2/12/2019"
+}, {
+  "id": 36,
+  "id_producto": 73,
+  "id_tienda": 8,
+  "cantidad": 71,
+  "fecha_compra": "3/2/2019"
+}, {
+  "id": 37,
+  "id_producto": 56,
+  "id_tienda": 8,
+  "cantidad": 26,
+  "fecha_compra": "8/27/2018"
+}, {
+  "id": 38,
+  "id_producto": 79,
+  "id_tienda": 6,
+  "cantidad": 2,
+  "fecha_compra": "3/15/2019"
+}, {
+  "id": 39,
+  "id_producto": 24,
+  "id_tienda": 9,
+  "cantidad": 78,
+  "fecha_compra": "10/26/2018"
+}, {
+  "id": 40,
+  "id_producto": 30,
+  "id_tienda": 2,
+  "cantidad": 80,
+  "fecha_compra": "10/11/2018"
+}, {
+  "id": 41,
+  "id_producto": 16,
+  "id_tienda": 2,
+  "cantidad": 61,
+  "fecha_compra": "3/16/2019"
+}, {
+  "id": 42,
+  "id_producto": 18,
+  "id_tienda": 3,
+  "cantidad": 28,
+  "fecha_compra": "7/30/2018"
+}, {
+  "id": 43,
+  "id_producto": 39,
+  "id_tienda": 6,
+  "cantidad": 31,
+  "fecha_compra": "6/3/2019"
+}, {
+  "id": 44,
+  "id_producto": 3,
+  "id_tienda": 1,
+  "cantidad": 98,
+  "fecha_compra": "2/9/2019"
+}, {
+  "id": 45,
+  "id_producto": 53,
+  "id_tienda": 4,
+  "cantidad": 44,
+  "fecha_compra": "7/4/2019"
+}, {
+  "id": 46,
+  "id_producto": 2,
+  "id_tienda": 4,
+  "cantidad": 63,
+  "fecha_compra": "7/1/2019"
+}, {
+  "id": 47,
+  "id_producto": 1,
+  "id_tienda": 4,
+  "cantidad": 31,
+  "fecha_compra": "8/23/2018"
+}, {
+  "id": 48,
+  "id_producto": 33,
+  "id_tienda": 1,
+  "cantidad": 40,
+  "fecha_compra": "6/19/2019"
+}, {
+  "id": 49,
+  "id_producto": 52,
+  "id_tienda": 5,
+  "cantidad": 52,
+  "fecha_compra": "1/12/2019"
+}, {
+  "id": 50,
+  "id_producto": 81,
+  "id_tienda": 7,
+  "cantidad": 12,
+  "fecha_compra": "7/21/2019"
+}, {
+  "id": 51,
+  "id_producto": 86,
+  "id_tienda": 2,
+  "cantidad": 24,
+  "fecha_compra": "2/16/2019"
+}, {
+  "id": 52,
+  "id_producto": 25,
+  "id_tienda": 1,
+  "cantidad": 73,
+  "fecha_compra": "6/14/2019"
+}, {
+  "id": 53,
+  "id_producto": 42,
+  "id_tienda": 1,
+  "cantidad": 72,
+  "fecha_compra": "4/24/2019"
+}, {
+  "id": 54,
+  "id_producto": 100,
+  "id_tienda": 7,
+  "cantidad": 36,
+  "fecha_compra": "12/12/2018"
+}, {
+  "id": 55,
+  "id_producto": 75,
+  "id_tienda": 8,
+  "cantidad": 100,
+  "fecha_compra": "3/8/2019"
+}, {
+  "id": 56,
+  "id_producto": 76,
+  "id_tienda": 3,
+  "cantidad": 32,
+  "fecha_compra": "8/14/2018"
+}, {
+  "id": 57,
+  "id_producto": 47,
+  "id_tienda": 10,
+  "cantidad": 30,
+  "fecha_compra": "1/23/2019"
+}, {
+  "id": 58,
+  "id_producto": 75,
+  "id_tienda": 5,
+  "cantidad": 93,
+  "fecha_compra": "7/9/2019"
+}, {
+  "id": 59,
+  "id_producto": 53,
+  "id_tienda": 5,
+  "cantidad": 20,
+  "fecha_compra": "2/17/2019"
+}, {
+  "id": 60,
+  "id_producto": 13,
+  "id_tienda": 2,
+  "cantidad": 3,
+  "fecha_compra": "3/22/2019"
+}, {
+  "id": 61,
+  "id_producto": 71,
+  "id_tienda": 5,
+  "cantidad": 33,
+  "fecha_compra": "6/10/2019"
+}, {
+  "id": 62,
+  "id_producto": 55,
+  "id_tienda": 10,
+  "cantidad": 78,
+  "fecha_compra": "12/30/2018"
+}, {
+  "id": 63,
+  "id_producto": 38,
+  "id_tienda": 7,
+  "cantidad": 1,
+  "fecha_compra": "10/28/2018"
+}, {
+  "id": 64,
+  "id_producto": 51,
+  "id_tienda": 5,
+  "cantidad": 90,
+  "fecha_compra": "6/27/2019"
+}, {
+  "id": 65,
+  "id_producto": 7,
+  "id_tienda": 2,
+  "cantidad": 6,
+  "fecha_compra": "7/17/2019"
+}, {
+  "id": 66,
+  "id_producto": 59,
+  "id_tienda": 3,
+  "cantidad": 95,
+  "fecha_compra": "7/19/2019"
+}, {
+  "id": 67,
+  "id_producto": 2,
+  "id_tienda": 4,
+  "cantidad": 60,
+  "fecha_compra": "12/15/2018"
 }, {
   "id": 68,
-  "id_producto": 62,
-  "id_tienda": 2,
-  "cantidad": 97
+  "id_producto": 59,
+  "id_tienda": 9,
+  "cantidad": 16,
+  "fecha_compra": "9/18/2018"
 }, {
   "id": 69,
   "id_producto": 15,
-  "id_tienda": 8,
-  "cantidad": 60
+  "id_tienda": 4,
+  "cantidad": 40,
+  "fecha_compra": "9/27/2018"
 }, {
   "id": 70,
-  "id_producto": 64,
-  "id_tienda": 10,
-  "cantidad": 58
+  "id_producto": 15,
+  "id_tienda": 9,
+  "cantidad": 24,
+  "fecha_compra": "8/7/2018"
 }, {
   "id": 71,
-  "id_producto": 60,
-  "id_tienda": 3,
-  "cantidad": 36
+  "id_producto": 68,
+  "id_tienda": 8,
+  "cantidad": 54,
+  "fecha_compra": "9/1/2018"
 }, {
   "id": 72,
-  "id_producto": 63,
-  "id_tienda": 5,
-  "cantidad": 53
+  "id_producto": 26,
+  "id_tienda": 9,
+  "cantidad": 48,
+  "fecha_compra": "7/25/2019"
 }, {
   "id": 73,
-  "id_producto": 52,
-  "id_tienda": 8,
-  "cantidad": 94
+  "id_producto": 90,
+  "id_tienda": 9,
+  "cantidad": 78,
+  "fecha_compra": "4/18/2019"
 }, {
   "id": 74,
-  "id_producto": 25,
-  "id_tienda": 2,
-  "cantidad": 69
+  "id_producto": 12,
+  "id_tienda": 9,
+  "cantidad": 68,
+  "fecha_compra": "1/22/2019"
 }, {
   "id": 75,
-  "id_producto": 82,
+  "id_producto": 76,
   "id_tienda": 9,
-  "cantidad": 20
+  "cantidad": 64,
+  "fecha_compra": "4/15/2019"
 }, {
   "id": 76,
-  "id_producto": 22,
-  "id_tienda": 4,
-  "cantidad": 68
+  "id_producto": 69,
+  "id_tienda": 7,
+  "cantidad": 3,
+  "fecha_compra": "10/14/2018"
 }, {
   "id": 77,
-  "id_producto": 40,
-  "id_tienda": 3,
-  "cantidad": 46
+  "id_producto": 15,
+  "id_tienda": 7,
+  "cantidad": 77,
+  "fecha_compra": "4/12/2019"
 }, {
   "id": 78,
-  "id_producto": 58,
-  "id_tienda": 8,
-  "cantidad": 3
+  "id_producto": 95,
+  "id_tienda": 6,
+  "cantidad": 72,
+  "fecha_compra": "11/26/2018"
 }, {
   "id": 79,
-  "id_producto": 55,
-  "id_tienda": 8,
-  "cantidad": 16
+  "id_producto": 98,
+  "id_tienda": 9,
+  "cantidad": 39,
+  "fecha_compra": "6/11/2019"
 }, {
   "id": 80,
-  "id_producto": 70,
-  "id_tienda": 5,
-  "cantidad": 21
+  "id_producto": 4,
+  "id_tienda": 6,
+  "cantidad": 30,
+  "fecha_compra": "1/12/2019"
 }, {
   "id": 81,
-  "id_producto": 59,
-  "id_tienda": 8,
-  "cantidad": 99
+  "id_producto": 96,
+  "id_tienda": 9,
+  "cantidad": 82,
+  "fecha_compra": "12/11/2018"
 }, {
   "id": 82,
-  "id_producto": 78,
+  "id_producto": 68,
   "id_tienda": 9,
-  "cantidad": 25
+  "cantidad": 35,
+  "fecha_compra": "8/10/2018"
 }, {
   "id": 83,
-  "id_producto": 64,
-  "id_tienda": 8,
-  "cantidad": 75
+  "id_producto": 50,
+  "id_tienda": 5,
+  "cantidad": 29,
+  "fecha_compra": "11/26/2018"
 }, {
   "id": 84,
-  "id_producto": 98,
-  "id_tienda": 3,
-  "cantidad": 25
+  "id_producto": 16,
+  "id_tienda": 7,
+  "cantidad": 29,
+  "fecha_compra": "4/3/2019"
 }, {
   "id": 85,
-  "id_producto": 66,
-  "id_tienda": 1,
-  "cantidad": 88
+  "id_producto": 32,
+  "id_tienda": 2,
+  "cantidad": 90,
+  "fecha_compra": "9/4/2018"
 }, {
   "id": 86,
-  "id_producto": 95,
-  "id_tienda": 1,
-  "cantidad": 36
+  "id_producto": 38,
+  "id_tienda": 10,
+  "cantidad": 77,
+  "fecha_compra": "5/2/2019"
 }, {
   "id": 87,
-  "id_producto": 31,
-  "id_tienda": 9,
-  "cantidad": 62
+  "id_producto": 13,
+  "id_tienda": 4,
+  "cantidad": 84,
+  "fecha_compra": "12/9/2018"
 }, {
   "id": 88,
-  "id_producto": 12,
-  "id_tienda": 2,
-  "cantidad": 29
+  "id_producto": 11,
+  "id_tienda": 8,
+  "cantidad": 95,
+  "fecha_compra": "6/25/2019"
 }, {
   "id": 89,
-  "id_producto": 43,
-  "id_tienda": 5,
-  "cantidad": 44
+  "id_producto": 9,
+  "id_tienda": 7,
+  "cantidad": 54,
+  "fecha_compra": "2/2/2019"
 }, {
   "id": 90,
-  "id_producto": 27,
-  "id_tienda": 7,
-  "cantidad": 40
+  "id_producto": 52,
+  "id_tienda": 1,
+  "cantidad": 52,
+  "fecha_compra": "1/13/2019"
 }, {
   "id": 91,
-  "id_producto": 100,
-  "id_tienda": 3,
-  "cantidad": 55
+  "id_producto": 3,
+  "id_tienda": 6,
+  "cantidad": 68,
+  "fecha_compra": "2/18/2019"
 }, {
   "id": 92,
-  "id_producto": 89,
-  "id_tienda": 8,
-  "cantidad": 96
+  "id_producto": 82,
+  "id_tienda": 9,
+  "cantidad": 98,
+  "fecha_compra": "2/7/2019"
 }, {
   "id": 93,
   "id_producto": 83,
-  "id_tienda": 2,
-  "cantidad": 81
+  "id_tienda": 4,
+  "cantidad": 75,
+  "fecha_compra": "2/12/2019"
 }, {
   "id": 94,
-  "id_producto": 94,
-  "id_tienda": 9,
-  "cantidad": 40
+  "id_producto": 60,
+  "id_tienda": 5,
+  "cantidad": 18,
+  "fecha_compra": "5/23/2019"
 }, {
   "id": 95,
-  "id_producto": 66,
-  "id_tienda": 1,
-  "cantidad": 61
+  "id_producto": 73,
+  "id_tienda": 7,
+  "cantidad": 7,
+  "fecha_compra": "10/21/2018"
 }, {
   "id": 96,
-  "id_producto": 22,
-  "id_tienda": 5,
-  "cantidad": 10
+  "id_producto": 30,
+  "id_tienda": 6,
+  "cantidad": 10,
+  "fecha_compra": "12/28/2018"
 }, {
   "id": 97,
-  "id_producto": 7,
-  "id_tienda": 5,
-  "cantidad": 52
+  "id_producto": 1,
+  "id_tienda": 1,
+  "cantidad": 22,
+  "fecha_compra": "1/21/2019"
 }, {
   "id": 98,
-  "id_producto": 56,
-  "id_tienda": 8,
-  "cantidad": 3
+  "id_producto": 28,
+  "id_tienda": 9,
+  "cantidad": 60,
+  "fecha_compra": "11/18/2018"
 }, {
   "id": 99,
-  "id_producto": 87,
-  "id_tienda": 8,
-  "cantidad": 51
+  "id_producto": 53,
+  "id_tienda": 6,
+  "cantidad": 85,
+  "fecha_compra": "1/8/2019"
 }, {
   "id": 100,
-  "id_producto": 10,
-  "id_tienda": 10,
-  "cantidad": 91
+  "id_producto": 51,
+  "id_tienda": 9,
+  "cantidad": 28,
+  "fecha_compra": "6/18/2019"
 }]

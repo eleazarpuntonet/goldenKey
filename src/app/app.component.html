@@ -1,37 +1,42 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h4>Prueba tecnica de Angular</h4>
-  <mat-form-field>
-    <mat-label>Seleccione una vista</mat-label>
-    <mat-select>
-      <mat-option 
-      	*ngFor  = "let menuItem of options"
-      	[value] = "menuItem.value">
-        {{menuItem.texto}}
-      </mat-option>
-    </mat-select>
-  </mat-form-field>
 
 
-  <div class="tablebox">
+  <div class="tableSelector">
+    <mat-form-field>
+      <mat-label>Seleccione una vista</mat-label>
+      <mat-select 
+        [(ngModel)]="tablaSelected" 
+        (selectionChange)="changeTableSelection()">
+        <mat-option 
+          *ngFor  = "let menuItem of options"
+          [value] = "menuItem.value">
+          {{menuItem.texto}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+
+
+  <div class="tablebox" *ngIf="tablaSelected === 'inventario'">
     <app-tiendas-inventario>
     </app-tiendas-inventario>   
   </div>
-  
-  <div class="tablebox">
+
+  <div class="tablebox" *ngIf="tablaSelected === 'tiendas'">
     <app-tiendas>
     </app-tiendas>   
   </div>
   
-  <div class="tablebox">
+  <div class="tablebox" *ngIf="tablaSelected === 'productos'">
     <app-productos>
     </app-productos>   
   </div>
 
-  <div class="tablebox">
+  <div class="tablebox" *ngIf="tablaSelected === 'proveedores'">
   	<dtable-proveedores>
   	</dtable-proveedores>  	
   </div>
-
-
 </div>

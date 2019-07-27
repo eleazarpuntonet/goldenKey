@@ -10,6 +10,7 @@ import { ProveedoresService } from './proveedores.service';
 })
 export class AppComponent implements OnInit {
 	proveedores = {}
+  tablaSelected = 'proveedores'
   title = 'proyectoGoldenKey'
   options: menuItem[] = [
     {value: 'proveedores', texto: 'Proveedores'},
@@ -24,6 +25,11 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     console.log("Tengo vida!")
+  }
+
+  changeTableSelection(){
+    console.log("el valor de la tabla ha cambiado")
+    console.log(this.tablaSelected)
   }
 }
 

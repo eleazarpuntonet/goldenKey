@@ -16,7 +16,7 @@ import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog
 })
 export class TiendasInventarioComponent implements OnInit {
 
-	displayedColumns: string[] = ['select','id', 'id_producto', 'id_tienda','cantidad','action'];
+	displayedColumns: string[] = ['select','id', 'id_producto', 'id_tienda','cantidad','fecha_compra','action'];
 	dataSource : any           = []
 	selection = new SelectionModel<InventarioElements>(true, []);
 
@@ -55,6 +55,7 @@ export class TiendasInventarioComponent implements OnInit {
 		  	id_producto   : row.id_producto,
 		  	id_tienda  		: row.id_tienda,
 		  	cantidad  		: row.cantidad,
+		  	fecha_compra : row.fecha_compra
 		  }
 		})
 
