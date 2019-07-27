@@ -2,20 +2,51 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { ProveedoresComponent,dialogoEditaProveedor } from './proveedores/proveedores.component';
-import { MatTableModule } from '@angular/material'  
-import { MatPaginatorModule } from '@angular/material';
-import {MatButtonModule} from '@angular/material/button';
-import {MatSelectModule} from '@angular/material/select';
-import {MatDialogModule} from '@angular/material/dialog';
+import { 
+  ProveedoresComponent,
+  dialogoEditaProveedor,
+  dialogoCreaProveedor } from './proveedores/proveedores.component';
 import { FormsModule } from '@angular/forms';
-import { MatFormFieldModule, MatInputModule ,MatCheckboxModule} from '@angular/material';
+import { 
+  MatFormFieldModule, 
+  MatInputModule ,
+  MatCheckboxModule,
+  MatPaginatorModule,
+  MatTableModule,
+  MatButtonModule,
+  MatSelectModule,
+  MatDialogModule,
+  } from '@angular/material';
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
+import { 
+  ProductosComponent,
+  dialogoEditaProducto,
+  dialogoCreaProducto
+} from './productos/productos.component';
+import { 
+  TiendasComponent,
+  dialogoEditaTiendas,
+  dialogoCrearTienda 
+} from './tiendas/tiendas.component';
+import { 
+  TiendasInventarioComponent, 
+  dialogoEditaInventarioTiendas,
+  dialogoCreaInventarioTiendas } from './tiendas-inventario/tiendas-inventario.component';
 @NgModule({
   declarations: [
     AppComponent,
     ProveedoresComponent,
-    dialogoEditaProveedor
+    dialogoEditaProveedor,
+    dialogoCreaProveedor,
+    ProductosComponent,
+    dialogoEditaProducto,
+    dialogoCreaProducto,
+    TiendasComponent,
+    dialogoEditaTiendas,
+    dialogoCrearTienda,
+    TiendasInventarioComponent,
+    dialogoEditaInventarioTiendas,
+    dialogoCreaInventarioTiendas
   ],
   imports: [
     BrowserModule,
@@ -30,7 +61,16 @@ import {NoopAnimationsModule} from '@angular/platform-browser/animations';
     MatInputModule,
     MatCheckboxModule
   ],
-  entryComponents: [dialogoEditaProveedor],
+  entryComponents: [
+    dialogoEditaProveedor,
+    dialogoCreaProveedor,
+    dialogoEditaProducto,
+    dialogoCreaProducto,
+    dialogoEditaTiendas,
+    dialogoCrearTienda,
+    dialogoCreaInventarioTiendas,
+    dialogoEditaInventarioTiendas
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

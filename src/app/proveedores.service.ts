@@ -12,6 +12,7 @@ export class ProveedoresService {
   }
 
   newProveedor(newProveedor){
+    newProveedor.id = this.proveedores.length+1
   	this.proveedores.push(newProveedor)
   	this.saveProveedores()
   }
@@ -36,8 +37,25 @@ export class ProveedoresService {
   	this.saveProveedores()
   }
 
+  massDelProveedor(arr){
+    arr.forEach((val,index)=>{
+      let indx = this.proveedores.findIndex((item)=>{
+        return item.id === val.id
+      })
+      this.proveedores.splice(indx,1)
+    })
+    this.saveProveedores()
+  }
+
   saveProveedores(){
     console.log("Storage actualizado")
   	localStorage.setItem('proveedores', JSON.stringify(this.proveedores))
+  }
+
+  findProveedor(id){
+    let x = this.proveedores.find((val)=>{
+      return val.id === id
+    })
+    return x
   }
 }

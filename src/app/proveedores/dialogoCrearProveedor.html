@@ -1,4 +1,4 @@
-<h1 mat-dialog-title>Editar Proveedor</h1>
+<h1 mat-dialog-title>Crear Proveedor</h1>
 <div mat-dialog-content class="ele-dialog">
   <mat-form-field>
     <input 
@@ -9,26 +9,26 @@
   <mat-form-field>
     <input 
       matInput 
-      required
+      required="" 
     	placeholder="Proveedor" 
     	[(ngModel)]="data.proveedor">
   </mat-form-field>
   <mat-form-field>
     <input 
       matInput 
-      required
+      required="" 
     	placeholder="Pais" 
     	[(ngModel)]="data.pais">
   </mat-form-field>
   <mat-form-field>
     <input 
       matInput 
-      required
+      required="" 
     	placeholder="Telefono" 
     	[(ngModel)]="data.telefono">
   </mat-form-field>
 </div>
 <div mat-dialog-actions>
-  <button mat-button (click)="onNoClick()">Cancelar</button>
-  <button mat-button (click)="edtProveedor(data)" [mat-dialog-close]="data" cdkFocusInitial>Guardar</button>
+  <button mat-button (click)="cancelClick()">Cancelar</button>
+  <button mat-button (click)="addProveedor(data)" [mat-dialog-close]="data" cdkFocusInitial>Guardar</button>
 </div>

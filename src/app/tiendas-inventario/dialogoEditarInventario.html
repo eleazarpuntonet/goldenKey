@@ -1,0 +1,43 @@
+<h1 mat-dialog-title>Editar inventario</h1>
+<div mat-dialog-content class="ele-dialog">
+  <mat-form-field>
+    <input 
+      matInput 
+    	placeholder="Id" 
+    	disabled 
+      [(ngModel)]="data.id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Producto</mat-label>
+    <mat-select 
+      [(ngModel)]="data.id_producto">
+      <mat-option 
+        *ngFor="let producto of productosList" 
+        [value]="producto.id">
+        {{producto.nombre}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Tienda</mat-label>
+    <mat-select 
+      [(ngModel)]="data.id_tienda">
+      <mat-option 
+        *ngFor="let tienda of tiendasList" 
+        [value]="tienda.id">
+        {{tienda.nombre}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <input 
+      matInput 
+      required
+    	placeholder="Cantidad" 
+    	[(ngModel)]="data.cantidad">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancelar</button>
+  <button mat-button (click)="edtInventario(data)" [mat-dialog-close]="data" cdkFocusInitial>Guardar</button>
+</div>

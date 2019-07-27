@@ -1,25 +1,25 @@
 <div class="mat-elevation-z8">
   <div class="titleLine">
-    Tabla de proveedores
+    Tabla de productos
   </div>
   <div class="buttonLine">
     <button 
       mat-raised-button 
       class      = "ele-boton ele-edt"
-      (click)    = "crearProveedor()"
+      (click)    = "crearProducto()"
       color      = "primary">Crear
     </button>
     <button 
       mat-raised-button 
       [disabled] = "selection.selected.length===1? false : true"
       class      = "ele-boton ele-edt"
-      (click)    = "openDialog(selection.selected[0])"
+      (click)    = "openEdtDialog(selection.selected[0])"
       color      = "primary">Editar
     </button>
     <button 
       mat-raised-button 
       class      = "ele-boton ele-del"
-      (click)    = "massDelProveedor(selection.selected)"
+      (click)    = "massDelProducto(selection.selected)"
       color      = "warn">Eliminar
     </button>
   </div>
@@ -60,39 +60,39 @@
 
     <!-- Name Column -->
     <ng-container 
-      matColumnDef="proveedor">
+      matColumnDef="id_proveedor">
       <th 
         mat-header-cell 
-        *matHeaderCellDef> Nombre proveedor 
+        *matHeaderCellDef> Proveedor 
       </th>
       <td 
         mat-cell 
-        *matCellDef="let element"> {{element.proveedor}} 
+        *matCellDef="let element"> {{element.proveedor.proveedor}}
       </td>
     </ng-container>
 
     <!-- Weight Column -->
-    <ng-container matColumnDef="pais">
+    <ng-container matColumnDef="nombre">
       <th 
         mat-header-cell 
-        *matHeaderCellDef> Pais 
+        *matHeaderCellDef> Nombre 
       </th>
       <td 
         mat-cell 
-        *matCellDef="let element"> {{element.pais}} 
+        *matCellDef="let element"> {{element.nombre}} 
       </td>
     </ng-container>
 
     <!-- Symbol Column -->
     <ng-container 
-      matColumnDef="telefono">
+      matColumnDef="descripcion">
       <th 
         mat-header-cell 
-        *matHeaderCellDef> Telefono 
+        *matHeaderCellDef> Descripcion 
       </th>
       <td 
         mat-cell 
-        *matCellDef="let element"> {{element.telefono}} 
+        *matCellDef="let element"> {{element.descripcion}} 
       </td>
     </ng-container>
 
@@ -105,13 +105,13 @@
         <button 
           class="ele"
           mat-raised-button 
-          (click)="openDialog(row)" 
+          (click)="openEdtDialog(row)" 
           color="primary">Editar
         </button>
         <button 
           class="ele"
           mat-raised-button 
-          (click)="delProveedor(row)" 
+          (click)="delProducto(row)" 
           color="warn">Eliminar
         </button>
       </td>

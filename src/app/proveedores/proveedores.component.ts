@@ -28,7 +28,6 @@ export class ProveedoresComponent implements OnInit {
 	}
 
 	openDialog(row){
-		console.log(row)
 		const dialogRef = this.dialog.open(dialogoEditaProveedor, {
 		  width: '350px',
 		  data: {
@@ -40,7 +39,6 @@ export class ProveedoresComponent implements OnInit {
 		})
 
 		dialogRef.afterClosed().subscribe(result => {
-			console.log(result)
 			this.selection.clear()
 			this.reloadData()
 		})
@@ -57,8 +55,8 @@ export class ProveedoresComponent implements OnInit {
 	}
 
 	isAllSelected() {
-	  const numSelected = this.selection.selected.length;
-	  const numRows = this.dataSource.data.length;
+	  const numSelected  = this.selection.selected.length;
+	  const numRows      = this.dataSource.data.length;
 	  return numSelected === numRows;
 	}
 
@@ -78,31 +76,43 @@ export class ProveedoresComponent implements OnInit {
 	}
 
 	massDelProveedor(selecciones){
-		console.log(selecciones)
-		console.log(selecciones.selected[0])
-		console.log(selecciones._selection.entries)
+		this.proveedoresService.massDelProveedor(selecciones)
+		this.selection.clear()
+		this.reloadData()
 	}
 
 	edtProveedor(row){
-			const dialogRef = this.dialog.open(dialogoEditaProveedor, {
-			  width: '350px',
-			  data: {
-			  	id        : row.id,
-			  	proveedor : row.proveedor,
-			  	pais      : row.pais,
-			  	telefono  : row.telefono,
-			  }
-			})
-		  //this.proveedoresService.edtProveedores(row)
-			//this.reloadData()
+		const dialogRef = this.dialog.open(dialogoEditaProveedor, {
+		  width: '350px',
+		  data: {
+		  	id        : row.id,
+		  	proveedor : row.proveedor,
+		  	pais      : row.pais,
+		  	telefono  : row.telefono,
+		  }
+		})
+	  this.proveedoresService.edtProveedores(row)
+		this.reloadData()
+	}
+
+	crearProveedor(row){
+		const dialogRef = this.dialog.open(dialogoCreaProveedor, {
+		  width: '350px',
+		  data: {}
+		})
+
+		dialogRef.afterClosed().subscribe(result => {
+			this.selection.clear()
+			this.reloadData()
+		})
 	}
 }
 
 export interface ProveedoresElements {
-  id : number;
+  id        : number;
   proveedor : string;
-  pais : string;
-  telefono : number;
+  pais      : string;
+  telefono  : number;
 }
 
 
@@ -117,9 +127,9 @@ export interface DialogData {
   proveedor: Object
 }
 @Component({
-  selector: 'dialogo-editar-proveedor',
-  templateUrl: 'dialogoEditarProveedor.html',
-  styleUrls: ['./dialogoEditarProveedor.scss']
+  selector    : 'dialogo-editar-proveedor',
+  templateUrl : 'dialogoEditarProveedor.html',
+  styleUrls   : ['./dialogoEditarProveedor.scss']
 
 })
 export class dialogoEditaProveedor {
@@ -134,11 +144,40 @@ export class dialogoEditaProveedor {
   }
 
   edtProveedor(row){
-  	console.log(this.dialogRef)
  	  this.proveedoresService.edtProveedores(row)
     this.dialogRef.close()
+  }
+}
 
+
+
+
+
+
+
+
+
+
+export interface DialogDataCreate {
+  proveedor: Object
+}
+@Component({
+  selector    : 'dialogo-crear-proveedor',
+  templateUrl : 'dialogoCrearProveedor.html',
+  styleUrls   : ['./dialogoCrearProveedor.scss']
+
+})
+export class dialogoCreaProveedor {
+  constructor(
+  	private proveedoresService : ProveedoresService,
+    public dialogRef: MatDialogRef<dialogoCreaProveedor>,
+    @Inject(MAT_DIALOG_DATA) public data: DialogDataCreate) {}
+
+  cancelClick(): void {
+    this.dialogRef.close()
   }
 
-
+  addProveedor(row){
+ 	  this.proveedoresService.newProveedor(row)
+  }
 }
