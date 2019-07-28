@@ -15,7 +15,9 @@ import {
   MatTableModule,
   MatButtonModule,
   MatSelectModule,
+  MatIconModule,
   MatDialogModule,
+  MatMenuModule
   } from '@angular/material';
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 import { 
@@ -32,6 +34,7 @@ import {
   TiendasInventarioComponent, 
   dialogoEditaInventarioTiendas,
   dialogoCreaInventarioTiendas } from './tiendas-inventario/tiendas-inventario.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -59,7 +62,9 @@ import {
     FormsModule,
     MatFormFieldModule,
     MatInputModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatMenuModule,
+    MatIconModule
   ],
   entryComponents: [
     dialogoEditaProveedor,

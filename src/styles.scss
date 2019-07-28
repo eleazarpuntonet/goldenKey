@@ -38,3 +38,15 @@ table {
 .mat-elevation-z8{
 	padding-top     : 20px;
 }
+.ele .mat-menu-item{
+	height: 35px;
+}
+button.mat-menu-item {
+    width: 90% !important;
+}
+.ele .primary{
+  background-color: #673ab7;
+}
+.ele .warn{
+	background-color: #f44336;
+}

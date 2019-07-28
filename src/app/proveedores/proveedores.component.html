@@ -103,17 +103,28 @@
       </th>
       <td mat-cell *matCellDef="let row">
         <button 
-          class="ele"
-          mat-raised-button 
-          (click)="openDialog(row)" 
-          color="primary">Editar
+          mat-icon-button 
+          #menuTrigger        = "matMenuTrigger"
+          [matMenuTriggerFor] = "menu"
+          aria-label          = "Example icon-button with a menu">
+          <mat-icon>more_vert</mat-icon>
         </button>
-        <button 
-          class="ele"
-          mat-raised-button 
-          (click)="delProveedor(row)" 
-          color="warn">Eliminar
-        </button>
+        <mat-menu 
+          #menu="matMenu" 
+          [overlapTrigger]="false">
+            <button 
+              mat-menu-item
+              class="ele primary"
+              (click)="openDialog(row)" 
+              color="primary">Editar
+            </button>
+            <button 
+              mat-menu-item
+              class="ele warn"
+              (click)="delProveedor(row)" 
+              color="warn">Eliminar
+            </button>
+        </mat-menu>
       </td>
     </ng-container>
 
